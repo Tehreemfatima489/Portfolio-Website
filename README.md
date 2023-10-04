@@ -1,6 +1,6 @@
 # Portfolio-Website
 
-This is the source code for my personal portfolio website. It showcases my skills, projects, and provides a brief introduction about me. You can view the live website here.
+This is the source code for my project of portfolio website. It showcases my skills, projects, and provides a brief introduction about me. You can view the live website here.
 
 **Description**
 This portfolio website serves as a platform to display my skills and projects to potential clients, employers, and collaborators. It provides information about my background, work experience, and links to my social media profiles.
