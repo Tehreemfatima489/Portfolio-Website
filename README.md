@@ -2,10 +2,10 @@
 
 This is the source code for my project of portfolio website. It showcases my skills, projects, and provides a brief introduction about me. You can view the live website here.
 
-**Description**
+**Description:**
 This portfolio website serves as a platform to display my skills and projects to potential clients, employers, and collaborators. It provides information about my background, work experience, and links to my social media profiles.
 
-**Features**
+**Features:**
 1- Navigation menu for easy access to different sections.
 2- About Me section with a brief introduction and contact information.
 3- Services section highlighting my skills and services.
@@ -14,13 +14,13 @@ This portfolio website serves as a platform to display my skills and projects to
 6- Contact form for inquiries and messages.
 7- Social media links for connecting with me on various platforms.
 
-**Technologies Used**
+**Technologies Used:**
 HTML
 CSS
 Font Awesome for icons
 Google Fonts for fonts
 
-**Installation**
+**Installation:**
 
 1- Clone the repository to your local machine:
 bash
