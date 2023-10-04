@@ -1,0 +1,908 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html elemt styling */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+h1, h2, h3{
+    font-weight: 500;
+}
+
+/* UTILITY CLASSES */
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    margin: 0.5em, 0;
+    font-weight: 500;
+    border-radius: 30px;
+
+}
+.btn-primary{
+    background-color: white;
+    color: black;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary{
+    background-color: rgb(247, 176, 46);
+    color: white;
+}
+.btn-secondary:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.btn-footer{
+    color: black;
+    background-color: white;
+    text-transform: none;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+.btn-footer:hover{
+    background-color: rgb(192, 192, 192);
+}
+.lg-heading{
+    font-size: 3rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+.sm-heading{
+    font-size: 2rem;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-orange{
+    color: #E34234;
+}
+
+/* HEADER */
+
+.header{
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    background: url(../images/v882-kul-71.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* logo */
+
+
+.logo-t{
+    float:left;
+    /* border:2px solid red; */
+    padding: 1rem;
+}
+.t-font{
+    font-family: 'Croissant One', cursive; 
+       font-size: 4.8rem;
+}
+
+
+/* navigation */
+.navigation{
+    /* border: 2px solid green; */
+    padding:1rem;
+    width:100%;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.navigation .nav-ul{
+    padding: 2rem;
+    /* border:1px solid rgb(35, 14, 226); */
+    float: right;
+}
+
+.navigation .ul-item{
+    padding: 1rem;
+    display:inline-block;
+    text-transform:capitalize;
+    /* border:2px solid red; */
+}
+.navigation .ul-item a:hover{
+    color: #E34234;
+    border-bottom: 1px solid #E34234;
+}
+
+.navigation .nav-ul a{
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+
+.navigation::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header content */
+
+/* hi, i am */
+.h-content{
+    position: relative;
+}
+.h-content h1{
+    position: absolute;
+    top: 110px;
+    left:230px;
+    color: #b1afaf;
+
+}
+/* tehreem fatima */
+
+.wrap-name{
+    position: relative;
+}
+.wrap-hname{
+    position: absolute;
+    top: 128px;
+    left: 230px;
+    font-size: 4.55rem;
+    font-weight:600;
+    margin-bottom: 3rem;
+    letter-spacing: 0.9rem;
+    font-family: 'Croissant One', cursive;
+}
+
+/* dynamic and static text i am web developer */
+.head-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 72vh;
+
+}
+.wrapper{
+    display: inline-flex;
+}
+
+
+.wrapper .static-text{
+    margin-left: 8rem;
+    font-size: 2rem;
+    line-height: 5.62rem;
+    font-weight: 400;
+    color: #b1afaf;
+}
+
+.wrapper .dynamic-text{
+    margin-left: 0.938rem;
+    line-height: 5.62rem;
+    height: 5.62rem;
+    overflow: hidden;
+}
+
+
+.dynamic-text li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 3.7rem;
+    position: relative;
+    top: 0;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    animation: slide 12s steps(4) infinite;
+
+}
+@keyframes slide {
+    100%{
+        top: -22.5rem;
+    }
+}
+.dynamic-text li span{
+    position: relative;
+}
+
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #E34234;
+    animation: typing 3s steps(20) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0rem -2.188rem 0rem 2.188rem;
+    }
+}
+
+/* hire me btn */
+
+.btn-div{
+    position: relative;
+    
+}
+.btn-hire{
+    position: absolute;
+    top:-165px;
+    left:400px;
+    padding: 1.2rem 3rem;
+    color: #fff;
+    /* font-family: 'Croissant One', cursive; */
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid #E34234;
+
+}
+.btn-hire:hover{
+    background-color: #E34234;
+}
+
+.side-url{
+    position: relative;
+
+    /* border: 2px solid green; */
+}
+.social-list{
+    position: absolute;
+    top: -240px;
+    left: 30px;
+    
+    /* border: 2px solid purple; */
+}
+.social-item{
+    padding: 0.4rem 0;
+
+}
+.social-list a{
+    color: #ffffff;
+
+}
+.social-list a:hover{
+    color: #E34234;
+}
+
+
+/* about me */
+
+.about-me{
+    height: 140vh;
+    width: 100%;
+    padding: 10rem 0;
+    background-color: #2e2d2d;
+    /* color: #b1afaf; */
+}
+
+.about-heading{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3.2rem;
+    letter-spacing: 0.4rem;
+    
+
+}
+
+.me-border{
+    border-bottom: 3px solid #E34234;
+   
+}
+
+/* about content */
+.me-wraper{
+    /* border: 2px solid white; */
+}
+
+.me-para{
+    width: 60%;
+    float: left;
+    padding: 3.9rem;
+}
+
+.me-para h1{
+    font-size: 2.2rem;
+    padding: 1.5rem 0;
+}
+.about-para{
+    color: #999898;
+}
+
+.me-info{
+    padding-right: 2rem;
+
+    width: 40%;
+    float: right;
+    padding-top: 13rem;
+}
+.info-item{
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1px solid #616161;
+    font-weight: 300;
+}
+.info-bold{
+    font-weight: 500;
+}
+.info-email{
+    color: #E34234;
+}
+.me-wraper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cv-div{
+    margin-top: 3rem;
+}
+
+.btn-cv{
+    padding: 1.2rem 3rem;
+    /* font-family: 'Croissant One', cursive; */
+    text-transform: capitalize;
+    color: white;
+    background-color: #E34234;
+    border-radius: 30px;
+}
+.btn-cv:hover{
+    background-color: #fd4b3b;
+}
+
+/* stats */
+
+
+.stats{
+    
+   
+   /* border:2px solid green; */
+}
+
+.stats .count{
+    margin: 4rem 0;
+
+   float:left;
+   width:25%;
+   text-align: center;
+   border-right: 0.1px solid #616161;;
+   /* border: 2px solid green; */
+
+}
+.stats-num{
+    /* color: #999898; */
+    color: #E34234;
+}
+.stats-p{
+    color: #fff;
+
+}
+
+.count h2{
+   font-size: 4rem;
+}
+.stats-wrapper{
+   text-align: center;
+   /* border:3px solid red; */
+   /* background-color: rgb(0, 0, 0); */
+}
+.stats-wrapper::after{
+   content:"";
+   display: block;
+   clear: both;
+}
+
+/* services */
+
+.work{
+    width: 100%;
+    height: 130vh;
+    background-color: #000000;
+    padding: 10rem 0;
+}
+
+.work .work-heading{
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-size: 3.2rem;
+    
+
+}
+.work .workh-line{
+    border-bottom: 3px solid #E34234;
+}
+
+.work-wrapper{
+    /* border: 5px solid white; */
+    color: #fff;
+    margin-top: 3.5rem;
+}
+.left-work{
+    width: 50%;
+    float: left;
+    padding: 2rem;
+}
+
+.right-work{
+    width: 50%;
+    float: right;
+    padding: 2rem;
+}
+.work-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-wrap{
+    /* border: 3px solid green; */
+    margin: 2rem 0;
+}
+.icon{
+    width:20%;
+    float: left;
+}
+.icon-after{
+    width: 80%;
+    float: right;
+    padding: 1.2rem;
+}
+.icon-wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.icon i{
+    font-size: 3.3rem;
+    padding: 1.2rem;
+    margin-top: 2.6rem;
+    margin-left: 1.2rem;
+    background-color: #2e2d2d;
+    border-radius: 10px;
+}
+.right-head, .left-head{
+    font-size: 2.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.right-para, .left-para{
+    font-size: 1.5rem;
+    color: #b1afaf;
+}
+
+/* portfolio work */
+
+.portfolio{
+    width:100%;
+    height: 250vh;
+    padding: 10rem 0;
+    background-color: #2e2d2d;
+}
+.port-heading{
+    text-align: center;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+}
+.port-line{
+    border-bottom: 3px solid #E34234;
+
+}
+
+.port-wrapper{
+    /* border: 2px solid green; */
+}
+.port-item{
+    margin: 7rem 0;
+    padding: 2rem 0;
+    /* border: 4px solid brown; */
+    /* background-color: blue; */
+}
+
+.port-img{
+    width: 50%;
+    float: left;
+    /* border: 2px solid blueviolet; */
+}
+.port-img img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+    object-position: center;
+    object-fit: cover;
+}
+.port-text{
+    width: 50%;
+    float: right;
+    padding: 3.5rem;
+
+}
+.port-text h1, .port-text2 h1{
+    color: white;
+    font-size: 3.6rem;
+    padding-bottom: 1.5rem;
+}
+.port-text p, .port-text2 p{
+    color: #b1afaf;
+    padding-bottom: 1.6rem;
+}
+.port-product{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    /* border: 2px solid aqua; */
+}
+.port-item::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* .port-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+.port-item2{
+    margin: 7rem 0;
+    /* border: 4px solid brown; */
+    /* background-color: blue; */
+}
+
+.port-img2{
+    width: 50%;
+    float: right;
+    /* border: 2px solid blueviolet; */
+}
+.port-img2 img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+    object-position: center;
+    object-fit: cover;
+}
+.port-text2{
+    width: 50%;
+    float: left;
+    padding: 3.5rem;
+
+}
+.port-text i, .port-text2 i{
+    font-size: 3rem;
+    color: #000;
+}
+.port-wrapper i:hover{
+    color: #E34234;
+}
+
+.port-item2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-port{
+    padding: 0.8rem 1.8rem;
+    /* font-family: 'Croissant One', cursive; */
+    text-transform: capitalize;
+    color: white;
+    background-color: #E34234;
+    border-radius: 30px;
+}
+.btn-port:hover{
+    background-color: #fd4b3b;
+}
+.btn-project{
+    text-align: center;
+    margin-left: 38rem;
+}
+/* testimonial */
+.testimonial{
+    width: 100%;
+    height: 120vh;
+    padding: 10rem 0;
+    background-color: #000;
+    color: #fff;
+}
+.test-wrapper{
+    /* border: 2px solid green; */
+}
+.test-left{
+    width: 35%;
+    float: left;
+    padding-top: 6.6rem;
+    padding-left: 4rem;
+
+    /* border: 2px solid purple; */
+}
+.sm-test{
+    color: #b1afaf;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.test-left .lg-test{
+    color: #fff;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
+    
+}
+.test-left p{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #b1afaf;
+}
+.test-right{
+    width: 65%;
+    float: right;
+    padding: 3.5rem;
+    /* border: 2px solid red; */
+}
+.test-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* slider */
+
+.right-wrapper{
+    color: #fff;
+    /* border:2px solid blue; */
+    padding: 0rem;
+}
+ .test{
+    color: #fff;
+     /* border: 2px solid red; */
+     float:left;
+     width: 50%;
+     padding: 0 2rem;
+     
+
+ }
+ .test-left a{
+    font-size: 2.4rem;
+    margin-top: 3rem;
+ }
+ .test:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
+
+
+ }
+ .test-img{
+     width: 85%;
+     /* border: 2px solid green; */
+ }
+
+ .user{
+     border-radius: 50%;
+ }
+
+ .test-img img{
+     width:100%;
+     height:100%;
+     display:inline-block;
+     object-fit: cover;
+     object-position: center;
+     
+ }
+ .test-text{
+     padding: 1.6rem;
+     color: rgb(255, 255, 255);
+     font-size: 1.5rem;
+     
+ }
+
+
+ .test-h{
+     
+     padding: 1.6rem 0;
+     color: #E34234;
+     text-align: center;
+ }
+ .test-status{
+     color: #b1afaf;
+     font-size: 1.3rem;
+     padding-left: 0.5rem;
+ }
+
+ blockquote{
+    line-height: 3rem;
+}
+
+blockquote::before{
+    content: '\0022';
+    font-size: 5rem;
+    position: relative;
+    color: #E34234;
+    line-height: 2rem;
+    bottom:-15px;
+    right: 5px;;
+}
+
+blockquote::after{
+    content: '\0022';
+    font-size: 5rem;
+    position: relative;
+    color: #E34234;
+    line-height: 2rem;
+    bottom:-15px;
+    left: 5px;;
+}
+
+ .right-wrapper::after{
+     content: "";
+     display: block;
+     clear: both;
+ }
+ /* contact */
+
+.contact{
+    width: 100%;
+    height: 110vh;
+    padding: 10rem 0;
+    background-color: #2e2d2d;
+}
+.left-contact{
+    width:40%;
+    float: left;
+}
+.right-contact{
+    width: 60%;
+    float: right;
+}
+.contact-wrapper{
+    content: "";
+    display: block;
+    clear: both;
+    margin-top: 6.5rem;
+}
+ 
+ .contact-form {
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #E34234;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    background-color: #616161;
+    border: none;
+    color: #fff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #E34234;
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #fd4b3b;
+}
+
+.left-contact{
+    /* border: 2px solid red; */
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+}
+.left-contact h1{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+
+}
+
+.left-contact .address-para{
+    color: #b1afaf;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+.contact-more{
+    padding-top: 0.2rem;
+    color: #fff;
+    font: 1.5rem;
+}
+.follow{
+    margin-top: 1.8rem;
+}
+.link-contact{
+    padding-right: 1.3rem;
+    font-size: 1.9rem;
+    color: #ddd;
+}
+.left-contact a:hover{
+    color: #E34234;
+}
+
+/* footer */
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    height: 30vh;
+    background-color: black;
+    padding: 6rem 0;
+}
+
+.footer a i{
+    margin-right: 0.9rem;
+    
+}
+
+.footer a{
+    margin-bottom: 2rem;
+}
+
+.icons{
+    color:white;
+
+}
+.icons i:hover{
+    color: #b1afaf;
+}
+
+.icons i{
+    padding-right: 0.5rem;
+}
